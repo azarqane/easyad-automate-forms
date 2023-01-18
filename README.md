@@ -30,7 +30,6 @@ Please note that this script will create new users with password never expires, 
 It's important to make sure that the user who runs the script have enough privileges to create new users in AD and that your firewall is configured to allow the script to communicate with your email server.
 
 Make sure that the Excel spreadsheet contains the following columns :
-
 Name
 Lastname
 Email (the email address of the new user, who will receive their account information)
@@ -43,8 +42,4 @@ The script does not currently support editing or deleting existing users.
 The script does not support for multiple domains or forests.
 Contribute
 
-This script is open source, if you wish to contribute, you can do so by submitting a pull request.
-
-# License
-
-This script is licensed under the MIT License.
+This script is open source, if you wish to contribute, you can do so by submitting 
