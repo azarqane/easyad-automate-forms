@@ -1,7 +1,5 @@
-![Banner du projet](https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-1cf8-620a-9be5-3efd67bd8c1e/raw?se=2025-04-25T19%3A51%3A24Z&sp=r&sv=2024-08-04&sr=b&scid=8163d6ba-3270-5132-8930-951f70bb2f3d&skoid=dfdaf859-26f6-4fed-affc-1befb5ac1ac2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-25T00%3A03%3A46Z&ske=2025-04-26T00%3A03%3A46Z&sks=b&skv=2024-08-04&sig=2aIm5XcUDL38zaCQrxWkoQbwBBj7MW1NTAPdKv9PpCg%3D)
+![Banner du projet](assets/projet1.png)
 # | Active Directory + Power Automate |
-
-# 🏢 Geosys : 🛰️ Imagerie satellite haute résolution
 
 # 🛠️ Automatisation de la Création des Comptes AD
 
@@ -14,7 +12,7 @@ Automatiser la création des comptes utilisateurs Active Directory (AD) afin de 
 - Réduire les délais de création (de J+6 à H+1).
 - Éliminer la dépendance aux interventions d’Agoravita.
 - Améliorer l’efficacité du processus d’onboarding des nouveaux collaborateurs.
-![Diagramme J+]()
+![Diagramme J+](assets/automate1.png)
 ---
 
 ## 🧰 Technologies utilisées
@@ -24,7 +22,7 @@ Automatiser la création des comptes utilisateurs Active Directory (AD) afin de 
 - **Excel Online (OneDrive)** : stockage temporaire des données utilisateur.
 - **PowerShell** : création des comptes AD, attribution des groupes/licences, envoi du mot de passe.
 - **Azure AD / Office 365** : synchronisation cloud et attribution de licences.
-
+![process automate](assets/automate2.png)
 ---
 
 ## 🔄 Fonctionnement du workflow
@@ -64,16 +62,6 @@ Automatiser la création des comptes utilisateurs Active Directory (AD) afin de 
 - Mise à jour continue du fichier Excel via OneDrive + Power Automate.
 
 ---
-
-## 📎 Exemple de Script PowerShell
-
-```powershell
-$password = ...
-New-ADUser -Name $name -SamAccountName $samAccountName ...
-Add-ADGroupMember -Identity $group -Members $samAccountName
-Send-MailMessage -To $managerEmail -Subject "Mot de passe" -Body "..."
-```
-
 
 
 
